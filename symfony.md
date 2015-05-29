@@ -2,6 +2,7 @@
 
 # Sommaire
 * [Json Response](#json_response)
+* [Controller Route annotation](#annot_route)
 * [Controller Action](#controller_action)
 * [Controller Redirect](#controller_redirect)
 * [Repository](#repository)
@@ -23,6 +24,17 @@ $serializer = $this->container->get('jms_serializer');
 $jsonData = $serializer->serialize(${$data}, 'json');
 $response = new JsonResponse();
 $response->setContent($jsonData);
+```
+
+## <a name="controller_route_annotation"></a>Controller Route annotation
+Importe la classe pour utiliser les annotations pour définir une route.
+
+Raccourics : **annot_route**
+
+(*notation netbeans*)
+
+```
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 ```
 
 ## <a name="controller_action"></a>Controller Action 
