@@ -5,6 +5,7 @@
 * [Controller Route annotation](#controller_route_annotation)
 * [Controller Action](#controller_action)
 * [Controller Redirect](#controller_redirect)
+* [Controller Render View](#controller_render)
 * [Repository](#repository)
 * [Query builder](#querybuilder)
 * [Form](#form)
@@ -64,6 +65,17 @@ Raccourcis : **redirect**
 
 ```
 return $this->redirect($this->generateUrl(${'homepage'}));
+```
+
+## <a name="controller_render"></a>Controller render
+Retourner la vue.
+
+Raccourcis : **render**
+
+(*notation netbeans*)
+
+```
+return $this->render(${'Bundle:Default:view.html.twig'},array());
 ```
 
 ## <a name="repository"></a>Repository 
